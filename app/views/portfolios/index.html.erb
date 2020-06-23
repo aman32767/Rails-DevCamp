@@ -6,6 +6,6 @@
     <p><%=portfolio.body%></p>
     <%=image_tag portfolio.main_image if !portfolio.main_image.nil? %>
     <%= link_to "Edit",edit_portfolio_path(portfolio) %>
-    <%= link_to "Show",portfolio_path(portfolio) %>
+    <%= link_to "Show",portfolio_show_path(portfolio) %>
     <%= link_to "Delete",portfolio_path(portfolio),method: :delete,data:{confirm:"are you sure?"} %>
 <% end %>
